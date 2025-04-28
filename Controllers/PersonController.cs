@@ -70,7 +70,7 @@ namespace API_Labb3.Controllers
 
             await _context.SaveChangesAsync();
 
-            return NoContent();
+            return Ok(new {message = $"IntresseId {interestIdToAdd} har adderats till personId {personId}"});
         }
     }
 }
